@@ -14,7 +14,7 @@
 
     <div class="search-input-wrapper">
       <input type="search" class="search-input" placeholder="Поиск товар по названию" v-on:input="(event) => this.$emit('inputChange',event)">
-      <button type="submit" class="search-icon"></button>
+      <div class="search-icon"></div>
     </div>
 
 
@@ -79,11 +79,14 @@ export default {
 
 .search-icon {
   position: absolute;
-  width: 20px;
-  height: 20px;
   right: 50px;
-  top: 10px;
-
+  top:6px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../img/search-interface-symbol.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .search-input::placeholder {

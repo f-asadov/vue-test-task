@@ -21,7 +21,7 @@ export default ({
     return {
       products: [],
       searchQuery: '',
-      index:'aa'
+      index:''
     }
   },
   methods: {
@@ -37,7 +37,7 @@ export default ({
         this.products.splice(index, 1);
     }
 
-  },
+  },  
   mounted() {
     this.getProducts()
   },
@@ -71,6 +71,7 @@ body {
 .main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
   height: 60vh;
+  overflow-y: hidden;
 
 }
 </style>
